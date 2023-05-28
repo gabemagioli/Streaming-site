@@ -1,0 +1,72 @@
+.filmes{
+    background-color: rgb(47, 46, 46);
+    margin:-80px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.titulo{
+    margin-left: 38%;
+}
+.titulo-pag{
+    text-align: center;
+    color: white;
+    font-size:70px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    border-bottom: 3px solid white;
+    width: 40%;
+}
+.comedia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid whitesmoke;
+    padding:15px;
+}
+.genero-comedia{
+    color: white;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 10;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 80px;
+}
+.a-com{
+    text-decoration: none;
+}
+.li-comedia{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.li-comedia:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.informacao-comedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-decoration: none;
+    margin-top:-30px;
+    color: rgb(182, 179, 179);
+}
+.filme-img{
+    width:250px;
+    height: 350px;
+    border-radius:15px;
+}
+.nome-filme{
+    font-size:17px;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 0px;
+}

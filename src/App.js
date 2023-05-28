@@ -1,4 +1,5 @@
 import './App.css';
+import Filmes from './components/abaFilmes/Filmes';
 import Header from './components/header/Header';
 import IndicacaoFilme from './components/indicacaoFilme/IndicacaoFilme';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header/>
       <IndicacaoFilme/>
+      <Filmes/>
     </div>
   );
 }

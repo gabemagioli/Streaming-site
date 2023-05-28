@@ -1,4 +1,5 @@
 import "./header.css";
+import { MdLogout } from "react-icons/md";
 
 const Header = () => {
     <>
@@ -11,18 +12,18 @@ const Header = () => {
     return(
         <>
         <header className="header">
-            <div>
-            <img src="https://bitbucket.org/repo/ydBdKa/images/3020985987-Stream%20Logo.png" alt="logo website" className="logo"/>
-            </div>
-            <div>
-                <nav className="pastas-navegacao">
-                    <h2 className="pasta">MAIN</h2>
-                    <h2 className="pasta">NEWS</h2>
-                    <h2 className="pasta">CONTACT</h2>
-                    <h2 className="pasta">YOUR ACCOUNT</h2>
-                    <h2 className="pasta">SIGN OUT</h2>   
-                </nav>
-            </div>
+                <div>
+                <img src="https://bitbucket.org/repo/ydBdKa/images/3020985987-Stream%20Logo.png" alt="logo website" className="logo"/>
+                </div>
+                <div>
+                    <nav className="pastas-navegacao">
+                        <h2 className="pasta">MAIN</h2>
+                        <h2 className="pasta">NEWS</h2>
+                        <h2 className="pasta">CONTACT</h2>
+                        <h2 className="pasta">YOUR ACCOUNT</h2>
+                        <h2 className="pasta">SIGN OUT <MdLogout/></h2>   
+                    </nav>
+                </div>
         </header>
         </>
     );

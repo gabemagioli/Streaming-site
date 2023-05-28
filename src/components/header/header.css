@@ -1,5 +1,11 @@
+.sec-header{
+    display:flex;
+    flex-direction:column;
+}
 .header{
-    background-color:rgb(69, 69, 69);
+    /*background-color:rgb(69, 69, 69);*/
+    background: url(./fundoimg.jpeg);
+    background-size:cover;
     display: flex;
     flex-direction: row;
 
@@ -23,6 +29,7 @@
     border:none;
     cursor: pointer;
     margin-left:40px;
+    font-weight: 20;
 }
 .pasta:hover{
     border-bottom:4px solid red;
