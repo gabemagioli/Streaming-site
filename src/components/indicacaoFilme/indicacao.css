@@ -1,0 +1,10 @@
+.indicacaoFilme{
+    background: url("https://th.bing.com/th/id/R.2651ebb275454f282912cfa29a41e56c?rik=NRpmx1d8INzO4A&pid=ImgRaw&r=0");
+    padding:5%;
+}
+
+.filmeIndicado{
+    display:flex;
+    justify-content: flex-start;
+    width:20%;
+}
