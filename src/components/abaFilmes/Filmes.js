@@ -1,5 +1,6 @@
 import "./filmes.css";
 import { BiTime } from "react-icons/bi";
+import { BsPlusLg } from "react-icons/bs";
 
 function Filmes () {
 
@@ -63,6 +64,7 @@ function Filmes () {
                             <p> | </p>
                             <p>{filme.tipo}</p>
                         </div></a>
+                        <span className="later-comedy">Watch Later <BsPlusLg/></span>
                     </li>
                 ))}
             </ul>
