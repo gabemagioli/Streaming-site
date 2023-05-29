@@ -83,3 +83,15 @@
     margin-left:18%;
     cursor: pointer;
 }
+.list-later{
+    color: white;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg,red, rgb(219, 3, 3), rgb(148, 1, 1), rgb(92, 1, 1), rgb(47, 46, 46)) 1;
+    width: 50%;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 10;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 80px;
+}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./filmes.css";
 import { BiTime } from "react-icons/bi";
 import { BsPlusLg } from "react-icons/bs";
@@ -48,6 +49,21 @@ function Filmes () {
     tipo: "COMEDY"
 }];
 
+//state do watch later
+    const [later, setLater] = useState([]);
+//funcao adicionar item na watch later list
+const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
+    const laterFilm = {
+        id:id,
+        foto:foto,
+        nome: nome,
+        duracao:duracao,
+        trailer: trailer,
+        tipo:tipo
+    };
+    setLater([...later, laterFilm]);
+}
+
     return(
         <section className="filmes">
             <div  className="titulo">
@@ -64,10 +80,11 @@ function Filmes () {
                             <p> | </p>
                             <p>{filme.tipo}</p>
                         </div></a>
-                        <span className="later-comedy">Watch Later <BsPlusLg/></span>
+                        <span className="later-comedy" onClick={() => addWatchLater(filme.id, filme.trailer, filme.nome, filme.duracao, filme.tipo)}>Watch Later <BsPlusLg/></span>
                     </li>
                 ))}
             </ul>
+            <h3 className="list-later">Watch Later List</h3>
         </section>
     );
 }
