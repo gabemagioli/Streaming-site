@@ -21,7 +21,7 @@ const Header = () => {
                         <h2 className="pasta">NEWS</h2>
                         <h2 className="pasta">CONTACT</h2>
                         <h2 className="pasta">YOUR ACCOUNT</h2>
-                        <h2 className="pasta">SIGN OUT <MdLogout/></h2>   
+                        <h2 className="pastaOut">SIGN OUT <MdLogout/></h2>   
                     </nav>
                 </div>
         </header>

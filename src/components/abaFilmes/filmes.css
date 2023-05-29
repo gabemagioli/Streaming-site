@@ -11,11 +11,12 @@
 }
 .titulo-pag{
     text-align: center;
-    color: white;
+    color: rgb(190, 189, 189);
     font-size:70px;
     font-family: 'Nunito', sans-serif;
     font-weight: 100;
     border-bottom: 3px solid white;
+    border-image: linear-gradient(90deg,red, rgb(219, 3, 3), rgb(148, 1, 1), rgb(92, 1, 1), rgb(83, 2, 2),rgb(63, 2, 2), rgb(92, 1, 1), rgb(148, 1, 1), rgb(219, 3, 3), red) 1;
     width: 40%;
 }
 .comedia{
@@ -27,7 +28,7 @@
     padding:15px;
 }
 .genero-comedia{
-    color: white;
+    color: rgb(190, 189, 189);
     border-bottom: 5px solid;
     border-image: linear-gradient(90deg,red, rgb(219, 3, 3), rgb(148, 1, 1), rgb(92, 1, 1), rgb(47, 46, 46)) 1;
     width: 50%;
@@ -90,11 +91,10 @@
 .later-comedy:hover{
     
     background-color: rgb(79, 1, 1);
-    transform: scale(1.03);
     transition: 0.5s;
 }
 .list-later{
-    color: white;
+    color: rgb(190, 189, 189);
     border-bottom: 5px solid;
     border-image: linear-gradient(90deg,red, rgb(219, 3, 3), rgb(148, 1, 1), rgb(92, 1, 1), rgb(47, 46, 46)) 1;
     width: 50%;
@@ -115,8 +115,8 @@
     text-decoration: none;
 }
 .filme-later{
-    width:250px;
-    height: 350px;
+    width:300px;
+    height: 430px;
     border-radius:15px;
 }
 .nome-later{

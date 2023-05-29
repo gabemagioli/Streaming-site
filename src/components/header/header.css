@@ -34,3 +34,19 @@
     border-bottom:4px solid red;
     color:rgb(237, 237, 237);
 }
+.pastaOut{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border:none;
+    background-color:rgb(152, 0, 0);
+    box-shadow: 3px 3px 5px rgb(42, 40, 40);
+    padding: 15px;
+    cursor: pointer;
+    margin-left:40px;
+    margin-top: 0px;
+    font-weight: 20;
+}
+.pastaOut:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+}

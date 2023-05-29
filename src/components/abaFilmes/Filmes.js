@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./filmes.css";
 import { BiTime } from "react-icons/bi";
-import { BsPlusLg } from "react-icons/bs";
+import { BsPlusLg, BsXLg } from "react-icons/bs";
 import {AiOutlineCheck} from "react-icons/ai";
 import anjosdalei from "./anjosdalei.jpg";
 
@@ -67,7 +67,11 @@ const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
     setLater([laterFilm, ...later]);
     setSimboloLater(<AiOutlineCheck/>);
     console.log("filme adicionado", later);
-}// ver depois pq a imagem nao aparece
+}// ver depois pq a imagem nao aparece -> tinha esquecido de importar a fto, arrumou ja
+
+const removerDoWatchLater = (id) => {//remover filme da lista de assistir depois
+    setLater(later.filter(item => id !== item.id));
+}
 
     return(
         <section className="filmes">
@@ -100,6 +104,7 @@ const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
                         <p> | </p>
                         <p>{filme.tipo}</p>
                     </div></a>
+                    <span className="later-comedy" onClick={() => removerDoWatchLater(filme.id)}>Remove <BsXLg/></span>
                 </li>
                 ))}
             </ul>
