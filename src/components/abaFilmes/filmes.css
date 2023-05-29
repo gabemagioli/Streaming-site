@@ -46,10 +46,6 @@
     flex-direction: column;
     text-decoration: none;
 }
-.li-comedia:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
-}
 .informacao-comedia{
     display: flex;
     flex-direction: row;
@@ -60,8 +56,8 @@
     color: rgb(182, 179, 179);
 }
 .filme-img{
-    width:250px;
-    height: 350px;
+    width:300px;
+    height: 430px;
     border-radius:15px;
 }
 .nome-filme{
@@ -73,15 +69,29 @@
     margin-left: 10px;
     margin-top: 0px;
 }
+.later{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom:1px solid whitesmoke;
+    padding:15px;
+}
 .later-comedy{
     color: white;
-    border: 1px solid;
+    border: none;
     padding:10px;
     width: 60%;
     text-align: center;
     background-color:rgb(92, 1, 1);
     margin-left:18%;
     cursor: pointer;
+}
+.later-comedy:hover{
+    
+    background-color: rgb(79, 1, 1);
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 .list-later{
     color: white;
@@ -94,4 +104,36 @@
     display: flex;
     justify-content: flex-start;
     margin-left: 80px;
+}
+
+.li-later{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.a-lat{
+    text-decoration: none;
+}
+.filme-later{
+    width:250px;
+    height: 350px;
+    border-radius:15px;
+}
+.nome-later{
+    font-size:17px;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.informacao-later{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-decoration: none;
+    margin-top:-30px;
+    color: rgb(182, 179, 179);
 }

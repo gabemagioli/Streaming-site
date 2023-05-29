@@ -1,6 +1,6 @@
 
 .indicacaoFilme{
-    background: url("https://th.bing.com/th/id/OIP.BKyLPKS__p5-lzwKoCw_ugHaEN?w=298&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    background: url("https://th.bing.com/th/id/R.fb75a6754e0607147328ae72f1e35334?rik=wGTQtNRXLoCQGg&riu=http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2f29We1MLNidfXrwkZe390frjnOns.jpg&ehk=ZVxJncTDmEvdlwjXRP8Tn%2bc6x0LVOPPU6020W5w4vfI%3d&risl=&pid=ImgRaw&r=0");
     background-size:cover;
     padding:5%;
     display:flex;
@@ -28,7 +28,7 @@
     font-size:50px;
     color: white;
     width:75%;
-    margin-left: -3%;
+    margin-left: -30%;
 }
 .genero-indicacao{
     font-size:18px;

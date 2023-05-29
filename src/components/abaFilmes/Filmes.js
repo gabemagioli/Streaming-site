@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./filmes.css";
 import { BiTime } from "react-icons/bi";
 import { BsPlusLg } from "react-icons/bs";
+import {AiOutlineCheck} from "react-icons/ai";
+import anjosdalei from "./anjosdalei.jpg";
 
 function Filmes () {
 
@@ -42,7 +44,7 @@ function Filmes () {
     tipo: "COMEDY"
 },{
     id: 5,
-    foto: "https://th.bing.com/th/id/OIP.NlDkWgLRsvE1tHIQkNEfDQHaLH?w=182&h=273&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    foto: anjosdalei,
     nome: "21 Jump Street",
     duracao: 119,
     trailer: "https://www.bing.com/videos/riverview/relatedvideo?&q=21+jump+street+movie+duratino&&mid=8C292E6728296E528D818C292E6728296E528D81&&FORM=VRDGAR",
@@ -51,6 +53,7 @@ function Filmes () {
 
 //state do watch later
     const [later, setLater] = useState([]);
+    const [simboloLater, setSimboloLater] = useState(<BsPlusLg/>);
 //funcao adicionar item na watch later list
 const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
     const laterFilm = {
@@ -61,8 +64,10 @@ const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
         trailer: trailer,
         tipo:tipo
     };
-    setLater([...later, laterFilm]);
-}
+    setLater([laterFilm, ...later]);
+    setSimboloLater(<AiOutlineCheck/>);
+    console.log("filme adicionado", later);
+}// ver depois pq a imagem nao aparece
 
     return(
         <section className="filmes">
@@ -71,20 +76,33 @@ const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
             </div>
             <h3 className="genero-comedia">Comedy</h3>
             <ul className="comedia">
-                { comedia.map(filme => (
-                    <li key={ filme.id } className="li-comedia">
-                        <a className="a-com" href={ filme.trailer }><img src={ filme.foto } alt="imagem o filme" className='filme-img'/>
-                        <h5 className="nome-filme">{ filme.nome }</h5>
+                { comedia.map(f => (
+                    <li key={ f.id } className="li-comedia">
+                        <a className="a-com" href={ f.trailer }><img src={ f.foto } alt="imagem o filme" className='filme-img'/>
+                        <h5 className="nome-filme">{ f.nome }</h5>
                         <div className="informacao-comedia">
-                            <p> <BiTime/> { filme.duracao }min</p>
+                            <p> <BiTime/> { f.duracao }min</p>
                             <p> | </p>
-                            <p>{filme.tipo}</p>
+                            <p>{f.tipo}</p>
                         </div></a>
-                        <span className="later-comedy" onClick={() => addWatchLater(filme.id, filme.trailer, filme.nome, filme.duracao, filme.tipo)}>Watch Later <BsPlusLg/></span>
+                        <span className="later-comedy" onClick={() => addWatchLater(f.id, f.trailer, f.nome, f.duracao, f.tipo)}>Watch Later {simboloLater}</span>
                     </li>
                 ))}
             </ul>
             <h3 className="list-later">Watch Later List</h3>
+            <ul className="later">
+                { later.map(filme => (
+                    <li key={ filme.id } className="li-later">
+                    <a className="a-lat" href={ filme.trailer }><img src={ filme.foto } alt="imagem o filme" className='filme-later'/>
+                    <h5 className="nome-later">{ filme.nome }</h5>
+                    <div className="informacao-later">
+                        <p> <BiTime/> { filme.duracao }min</p>
+                        <p> | </p>
+                        <p>{filme.tipo}</p>
+                    </div></a>
+                </li>
+                ))}
+            </ul>
         </section>
     );
 }

@@ -3,8 +3,7 @@
     flex-direction:column;
 }
 .header{
-    /*background-color:rgb(69, 69, 69);*/
-    background: url(./fundoimg.jpeg);
+    background-color:rgb(5, 5, 5);
     background-size:cover;
     display: flex;
     flex-direction: row;
