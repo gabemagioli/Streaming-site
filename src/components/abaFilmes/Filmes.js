@@ -85,7 +85,7 @@ const addWatchLater = (id, foto, nome, duracao, trailer, tipo) => {
                             <p> | </p>
                             <p>{f.tipo}</p>
                         </div></a>
-                        <span className="later-comedy" onClick={() => addWatchLater(f.id, f.trailer, f.nome, f.duracao, f.tipo)}>Watch Later {simboloLater}</span>
+                        <span className="later-comedy" onClick={() => addWatchLater(f.id, f.foto, f.nome, f.duracao, f.trailer, f.tipo)}>Watch Later {simboloLater}</span>
                     </li>
                 ))}
             </ul>
